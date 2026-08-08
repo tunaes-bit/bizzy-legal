@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bizzy — Hesap ve Veri Silme</title>
+<style>
+  :root { --metin:#1a1a1a; --soluk:#5b5b5b; --cizgi:#e5e5e5; --vurgu:#e62f74; --arka:#fff; --kutu:#faf7f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --metin:#e8e8e8; --soluk:#a0a0a0; --cizgi:#333; --vurgu:#ff6b9d; --arka:#161616; --kutu:#1e1a1c; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--metin); background: var(--arka);
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; padding-top: 1rem; border-top: 1px solid var(--cizgi); }
+  .ust { color: var(--soluk); font-size: .9rem; margin-bottom: 2rem; }
+  table { width: 100%; border-collapse: collapse; margin: .75rem 0; font-size: .93rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--cizgi); vertical-align: top; }
+  th { font-weight: 600; }
+  a { color: var(--vurgu); }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .adim { background: var(--kutu); border-radius: .6rem; padding: 1rem 1rem .85rem 2.25rem; margin: 1rem 0; }
+  .dil { margin: 2rem 0 0; font-size: .9rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--cizgi); color: var(--soluk); font-size: .875rem; }
+  code { background: var(--kutu); padding: .1rem .35rem; border-radius: .25rem; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Bizzy — Hesap ve Veri Silme</h1>
+<p class="ust">Son güncelleme: 8 Ağustos 2026 · Uygulama: Bizzy: Çocuğunuza Arkadaş (<code>com.eyexapp.bizzy</code>)</p>
+
+<p>Bu sayfa, Bizzy hesabınızı ve hesabınıza bağlı verileri nasıl sileceğinizi
+açıklar. Silme işlemini uygulama içinden kendiniz yapabilirsiniz; onay
+beklemenize gerek yoktur.</p>
+
+<h2>Uygulamadan silme</h2>
+
+<div class="adim">
+<ol>
+  <li>Bizzy uygulamasını açın ve ebeveyn hesabınızla giriş yapın</li>
+  <li><strong>Ayarlar</strong> ekranına gidin</li>
+  <li><strong>Hesabı sil</strong> seçeneğine dokunun</li>
+  <li>Kimliğinizi doğrulayın ve onaylayın</li>
+</ol>
+</div>
+
+<p>Onayladığınız anda hesabınız ve aşağıdaki veriler silinir. İşlem geri
+alınamaz.</p>
+
+<h2>Silinen veriler</h2>
+
+<table>
+<tr><th>Veri</th><th>Ne zaman silinir</th></tr>
+<tr><td>Hesap ve giriş bilgileri (e-posta, ad)</td><td>Hemen</td></tr>
+<tr><td>Çocuk kayıtları ve profilleri</td><td>Hemen</td></tr>
+<tr><td>Cihaz kayıtları</td><td>Hemen</td></tr>
+<tr><td>Konum geçmişi ve güvenli bölge kayıtları</td><td>Hemen</td></tr>
+<tr><td>Ekran süresi ve uygulama kullanım kayıtları</td><td>Hemen</td></tr>
+<tr><td>Oluşturulan masallar ve ses dosyaları</td><td>Hemen</td></tr>
+<tr><td>Etkinlik kayıtları</td><td>Hemen</td></tr>
+<tr><td>Sunucu günlükleri (kişisel içerik barındırmaz)</td><td>En geç 30 gün</td></tr>
+</table>
+
+<p>Satın alma kayıtları, yasal ve muhasebe yükümlülükleri nedeniyle Google Play
+tarafında saklanır; bu kayıtlar bizim değil Google'ın sorumluluğundadır.</p>
+
+<h2>Uygulamaya erişemiyorsanız</h2>
+
+<p>Telefonunuzu kaybettiyseniz veya giriş yapamıyorsanız, hesabınızın e-posta
+adresinden bize yazın:</p>
+
+<ul>
+  <li>Adres: <a href="mailto:tuna.es@bizzytime.app?subject=Hesap%20Silme%20Talebi">tuna.es@bizzytime.app</a></li>
+  <li>Konu: <strong>Hesap Silme Talebi</strong></li>
+</ul>
+
+<p>Talebi <strong>hesabın kayıtlı olduğu e-posta adresinden</strong> göndermeniz
+gerekir; bu, hesabın gerçekten size ait olduğunu doğrulamamızın tek yoludur.
+Talepler en geç 30 gün içinde sonuçlandırılır.</p>
+
+<h2>Çocuğun verilerini silme</h2>
+
+<p>Hesabınızın tamamını silmeden yalnızca bir çocuğun kaydını kaldırabilirsiniz.
+Uygulamada <strong>Çocuklarım</strong> ekranından ilgili çocuğu silmeniz, o
+çocuğa ait konum geçmişini, ekran süresi kayıtlarını ve profil bilgilerini
+kaldırır.</p>
+
+<p class="dil"><a href="#en">English version below</a> · <a href="../">Tüm yasal metinler</a> · <a href="../gizlilik/">Gizlilik Politikası</a></p>
+
+<hr id="en" style="margin:3rem 0 2rem;border:0;border-top:1px solid var(--cizgi)">
+
+<h1>Bizzy — Account &amp; Data Deletion</h1>
+<p class="ust">Last updated: 8 August 2026 · App: Bizzy: Çocuğunuza Arkadaş (<code>com.eyexapp.bizzy</code>)</p>
+
+<p>This page explains how to delete your Bizzy account and the data linked to
+it. You can do this yourself from inside the app — no approval step is
+required.</p>
+
+<h2>Deleting from the app</h2>
+
+<div class="adim">
+<ol>
+  <li>Open Bizzy and sign in with your parent account</li>
+  <li>Go to <strong>Settings</strong></li>
+  <li>Tap <strong>Delete account</strong></li>
+  <li>Verify your identity and confirm</li>
+</ol>
+</div>
+
+<p>Your account and the data below are deleted as soon as you confirm. This
+cannot be undone.</p>
+
+<h2>What gets deleted</h2>
+
+<table>
+<tr><th>Data</th><th>When</th></tr>
+<tr><td>Account and sign-in details (email, name)</td><td>Immediately</td></tr>
+<tr><td>Child records and profiles</td><td>Immediately</td></tr>
+<tr><td>Device records</td><td>Immediately</td></tr>
+<tr><td>Location history and safe-zone records</td><td>Immediately</td></tr>
+<tr><td>Screen time and app usage records</td><td>Immediately</td></tr>
+<tr><td>Generated stories and audio files</td><td>Immediately</td></tr>
+<tr><td>Activity records</td><td>Immediately</td></tr>
+<tr><td>Server logs (contain no personal content)</td><td>Within 30 days</td></tr>
+</table>
+
+<p>Purchase records are retained by Google Play for legal and accounting
+purposes; those records are held by Google, not by us.</p>
+
+<h2>If you cannot access the app</h2>
+
+<p>If you lost your phone or cannot sign in, email us from your account's email
+address:</p>
+
+<ul>
+  <li>Address: <a href="mailto:tuna.es@bizzytime.app?subject=Account%20Deletion%20Request">tuna.es@bizzytime.app</a></li>
+  <li>Subject: <strong>Account Deletion Request</strong></li>
+</ul>
+
+<p>You must send the request <strong>from the email address registered to the
+account</strong> — that is the only way we can confirm the account is yours.
+Requests are completed within 30 days.</p>
+
+<h2>Deleting a child's data only</h2>
+
+<p>You can remove a single child without deleting your whole account. Deleting
+a child from the <strong>My Children</strong> screen removes that child's
+location history, screen time records and profile.</p>
+
+<footer>
+Bizzy · <a href="../">Yasal metinler / Legal</a> · <a href="../gizlilik/">Gizlilik / Privacy</a>
+</footer>
+
+</main>
+</body>
+</html>
