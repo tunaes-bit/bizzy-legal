@@ -34,7 +34,7 @@
 <main>
 
 <h1>Bizzy — Gizlilik Politikası</h1>
-<p class="ust">Son güncelleme: 17 Ekim 2026 · Uygulama: Bizzy: Çocuğunuza Arkadaş</p>
+<p class="ust">Son güncelleme: 18 Ekim 2026 · Uygulama: Bizzy: Çocuğunuza Arkadaş</p>
 
 <p>Bizzy, ebeveynlerin çocuklarının cihaz kullanımını ve konumunu takip etmesini
 sağlayan bir ebeveyn denetimi uygulamasıdır. Bu politika, uygulamanın hangi
@@ -62,7 +62,8 @@ kullanılır ve ebeveynin kendi hesabına bağlıdır.</p>
 </tr>
 <tr>
   <td>Çocuk bilgileri: ad, doğum tarihi, isteğe bağlı fotoğraf, güvenli bölgeler,
-      günlük ekran süresi sınırı</td>
+      günlük ekran süresi sınırı, uyku ve yemek saatleri, yaşına uygun olmayan
+      uygulamalar için ebeveynin seçimleri</td>
   <td>Çocuk profilinin, raporların ve uyarıların oluşturulması. Bu bilgileri
       ebeveyn girer.</td>
   <td>Çocuk ya da hesap silinene kadar</td>
@@ -71,6 +72,13 @@ kullanılır ve ebeveynin kendi hesabına bağlıdır.</p>
   <td>Kullanılan uygulamalar ve kullanım süreleri</td>
   <td>Ekran süresi raporlarının ve günlük sınır bildirimlerinin üretilmesi</td>
   <td>13 ay (hesap silinirse hemen)</td>
+</tr>
+<tr>
+  <td>Uyarı kayıtları: hangi çocuğa, hangi gün, hangi uygulama için ve kaç dakika
+      kullanıldıktan sonra uyarı gönderildiği</td>
+  <td>Günlük sınır, uyku saati, yemek saati ve yaşına uygun olmayan uygulama
+      bildirimlerinin aynı gün içinde tekrar gönderilmemesi</td>
+  <td>30 gün (hesap silinirse hemen)</td>
 </tr>
 <tr>
   <td>Cihaz bilgileri: model, işletim sistemi sürümü, izin durumları, pil seviyesi,
@@ -112,6 +120,38 @@ bildirim gizlenemez; cihazı kullanan kişi takibin açık olduğunu her an gör
 
 <p>Haritalar OpenStreetMap harita sunucularından yüklenir; bu sırada cihazın IP
 adresi harita sunucusuna iletilir. Çocuğun konumu harita sunucusuna gönderilmez.</p>
+
+<h2>Yaşına uygun olmayan uygulamalar ve web süzgeci</h2>
+
+<p>Ebeveyn açık bıraktığında, çocuğun telefonunda yaşına uygun olmayan bir uygulama
+açılırsa Bizzy karakteri ekranın üzerine gelir ve çocuğu uygulamayı kapatmaya
+yönlendirir. Hangi uygulamanın açık olduğu, ekran süresi için zaten kullanılan
+kullanım istatistiklerinden anlaşılır. Bizzy ekrandaki içeriği (videoyu, mesajları,
+sayfayı) <strong>okumaz</strong>. Hangi uygulamanın uygun olmadığına uygulamadaki
+yaş listesine ve ebeveynin seçimlerine göre karar verilir; ebeveyn bu seçimleri her
+an değiştirebilir ya da özelliği kapatabilir. Çocuk uygulamayı uzun süre kullanmaya
+devam ederse ebeveyne bildirim gider.</p>
+
+<p><strong>Web süzgeci.</strong> Ebeveyn açtığında ve çocuğun telefonunda onay
+verildiğinde, Bizzy aynı korumayı tarayıcıdaki siteler için de sağlar. Bunun için
+Android'in VPN özelliği <strong>yalnızca çocuğun telefonunda ve yalnızca site adı
+sorguları (DNS) için</strong> kullanılır:</p>
+
+<ul>
+  <li>Site adları telefonun içinde denetlenir; Bizzy'nin sunucularına ya da
+      başka bir hizmete <strong>gönderilmez</strong>. Ziyaret edilen sayfaların
+      adresleri ve içerikleri görülmez.</li>
+  <li>Yetişkin siteler telefondaki listeye göre açılmaz. Diğer sorgular,
+      telefonun bağlı olduğu ağın (Wi-Fi ya da mobil operatör) kendi DNS
+      sunucusuna iletilir. Ağın DNS sunucusu okunamazsa, nadiren, genel bir DNS
+      hizmeti (Google ya da Cloudflare) kullanılır.</li>
+  <li>Bizzy'nin hangi sitenin açık olduğunu birkaç dakika boyunca anlayabilmesi için
+      site adları yalnızca telefonda kısa bir kayıtta tutulur; kayıt büyüdükçe en
+      eskileri silinir ve telefondan dışarı çıkmaz.</li>
+  <li>Diğer internet trafiği VPN'den geçmez. VPN açıkken telefonun durum
+      çubuğunda anahtar simgesi görünür; ebeveyn web süzgecini istediği zaman
+      kapatabilir.</li>
+</ul>
 
 <h2>Yapay zekâ özellikleri</h2>
 
@@ -193,7 +233,7 @@ bilgilendirme yapılır.</p>
 <hr style="border:none;border-top:1px solid var(--cizgi);margin:3rem 0 2rem">
 
 <h1 id="en">Bizzy — Privacy Policy</h1>
-<p class="ust">Last updated: 17 October 2026 · App: Bizzy</p>
+<p class="ust">Last updated: 18 October 2026 · App: Bizzy</p>
 
 <p>Bizzy is a parental control application that lets parents monitor their
 child's device usage and location. This policy explains what data the app
@@ -209,8 +249,9 @@ to the parent's own account.</p>
 <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
 <tr><td>Location (approximate and precise)</td><td>Showing the parent the child's location and whether they are in a safe zone; showing the last seen place when the phone is no longer with the child. This is the app's core function.</td><td>Only the latest location is kept; no location history. Until account deletion.</td></tr>
 <tr><td>Email address and name</td><td>Account creation and authentication</td><td>Until account deletion</td></tr>
-<tr><td>Child details: name, date of birth, optional photo, safe zones, daily screen time limit</td><td>Child profile, reports and alerts. Entered by the parent.</td><td>Until the child or the account is deleted</td></tr>
+<tr><td>Child details: name, date of birth, optional photo, safe zones, daily screen time limit, bedtime and meal times, the parent's choices for apps not right for the child's age</td><td>Child profile, reports and alerts. Entered by the parent.</td><td>Until the child or the account is deleted</td></tr>
 <tr><td>Apps used and usage duration</td><td>Screen-time reports and daily limit notifications</td><td>13 months (immediately if the account is deleted)</td></tr>
+<tr><td>Alert records: which child, which day, which app and after how many minutes an alert was sent</td><td>Making sure daily limit, bedtime, meal time and age-inappropriate app alerts are not sent twice on the same day</td><td>30 days (immediately if the account is deleted)</td></tr>
 <tr><td>Device information: model, OS version, permission status, battery level, who is currently using the device, notification token</td><td>Compatibility, the "Who has the phone?" feature, battery and permission alerts, sending notifications, troubleshooting</td><td>Until account deletion</td></tr>
 <tr><td>Stories and "Ask Bizzy" messages</td><td>Generating and narrating requested stories and answering questions</td><td>Until account deletion</td></tr>
 <tr><td>In-app usage information (such as which screens are opened; Firebase Analytics)</td><td>Understanding how the app is used and improving it. Not used for advertising; the advertising ID is not collected.</td><td>Up to 14 months</td></tr>
@@ -226,6 +267,38 @@ stay current even when the screen is off and the app is not open. A
 cannot be hidden, so anyone using the device can see that tracking is active.
 Maps are loaded from OpenStreetMap tile servers, which receive the device's IP
 address but never the child's location.</p>
+
+<h2>Apps not right for the child's age and the web filter</h2>
+
+<p>When the parent leaves this on and an app that isn't right for the child's age is
+opened on the child's phone, the Bizzy character comes over the screen and guides
+the child to close the app. Which app is open is determined from the usage
+statistics already used for screen time. Bizzy does <strong>not</strong> read what
+is on the screen (videos, messages or pages). Whether an app is suitable is decided
+by the age list in the app and the parent's choices, which the parent can change or
+turn off at any time. If the child keeps using the app for a long time, the parent
+gets a notification.</p>
+
+<p><strong>Web filter.</strong> When the parent turns it on and it is approved on the
+child's phone, Bizzy gives the same protection for sites in the browser. For this,
+Android's VPN feature is used <strong>only on the child's phone and only for site
+name lookups (DNS)</strong>:</p>
+
+<ul>
+  <li>Site names are checked on the phone and are <strong>not sent</strong> to
+      Bizzy's servers or any other service. The addresses and contents of the pages
+      visited are not seen.</li>
+  <li>Adult sites are blocked using a list stored on the phone. Other lookups are
+      forwarded to the DNS server of the network the phone is connected to (Wi-Fi or
+      mobile operator). In the rare case that the network's DNS server cannot be read,
+      a public DNS service (Google or Cloudflare) is used.</li>
+  <li>So that Bizzy can tell which site has been open for the last few minutes, site
+      names are kept only in a short log on the phone; the oldest entries are removed
+      as it grows, and it never leaves the phone.</li>
+  <li>No other internet traffic goes through the VPN. While it is on, a key icon is
+      shown in the phone's status bar; the parent can turn the web filter off at any
+      time.</li>
+</ul>
 
 <h2>AI features</h2>
 
