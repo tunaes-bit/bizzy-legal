@@ -34,7 +34,7 @@
 <main>
 
 <h1>Bizzy — Gizlilik Politikası</h1>
-<p class="ust">Son güncelleme: 18 Ekim 2026 · Uygulama: Bizzy: Çocuğunuza Arkadaş</p>
+<p class="ust">Son güncelleme: 19 Ekim 2026 · Uygulama: Bizzy: Çocuğunuza Arkadaş</p>
 
 <p>Bizzy, ebeveynlerin çocuklarının cihaz kullanımını ve konumunu takip etmesini
 sağlayan bir ebeveyn denetimi uygulamasıdır. Bu politika, uygulamanın hangi
@@ -51,9 +51,12 @@ kullanılır ve ebeveynin kendi hesabına bağlıdır.</p>
 <tr>
   <td>Konum (yaklaşık ve tam)</td>
   <td>Ebeveynin çocuğunun konumunu ve güvenli bölgede olup olmadığını görmesi;
-      telefon çocuktan ayrıldığında son görüldüğü yerin gösterilmesi.
-      Uygulamanın temel işlevidir.</td>
-  <td>Yalnızca son konum saklanır, konum geçmişi tutulmaz. Hesap silinene kadar.</td>
+      telefon çocuktan ayrıldığında son görüldüğü yerin gösterilmesi; ebeveyn
+      sorduğunda çocuğun bir günde nerelere gittiğinin anlatılması (konum
+      geçmişi). Uygulamanın temel işlevidir.</td>
+  <td>Son konum hesap silinene kadar. Konum geçmişi (yaklaşık 100 metrede ya da
+      10 dakikada bir alınan noktalar) 30 gün sonra kendiliğinden silinir; çocuk
+      profili ya da hesap silinince hemen silinir.</td>
 </tr>
 <tr>
   <td>E-posta adresi ve ad</td>
@@ -118,6 +121,13 @@ ebeveyn çocuğunun nerede olduğunu göremez.</p>
 <p>Takibin çalıştığı cihazda <strong>kalıcı bir bildirim</strong> gösterilir. Bu
 bildirim gizlenemez; cihazı kullanan kişi takibin açık olduğunu her an görebilir.</p>
 
+<p><strong>Konum geçmişi:</strong> Bizzy, çocuğun telefonunun konumundan
+seyreltilmiş noktalar (yaklaşık 100 metrede ya da 10 dakikada bir) saklar. Bu
+kayıtlar yalnızca ebeveynin hesabına bağlıdır; ebeveyn "Bizzy'ye Sor"da çocuğun
+bir günde nerelere gittiğini sorduğunda kullanılır. Kayıtlar 30 gün sonra
+kendiliğinden silinir; çocuk profili ya da hesap silinince hemen silinir. Ücretli
+paketler kullanıldığında konum geçmişi Bizzy Konum ve Bizzy Aile paketlerindedir.</p>
+
 <p>Haritalar OpenStreetMap harita sunucularından yüklenir; bu sırada cihazın IP
 adresi harita sunucusuna iletilir. Çocuğun konumu harita sunucusuna gönderilmez.</p>
 
@@ -157,8 +167,9 @@ sorguları (DNS) için</strong> kullanılır:</p>
 
 <p>Masallar ve "Bizzy'ye Sor" yanıtları Google Cloud'un yapay zekâ hizmetiyle
 (Gemini) üretilir. Bir soruyu yanıtlamak için çocuğunun adı, yaşı, bulunduğu güvenli
-bölge ya da ekran süresi gibi hesabındaki ilgili bilgiler bu hizmete iletilebilir;
-açık adres iletilmez. Google bu verileri yapay zekâ modellerini eğitmek için
+bölge, ekran süresi ya da o günün konum geçmişinin özeti (güvenli bölge adları,
+saatler ve uzaklıklar) gibi hesabındaki ilgili bilgiler bu hizmete iletilebilir;
+açık adres ve koordinat iletilmez. Google bu verileri yapay zekâ modellerini eğitmek için
 kullanmaz.</p>
 
 <h2>Verilerin paylaşımı</h2>
@@ -213,8 +224,8 @@ kullanmıyor, satmıyoruz.</p>
 </ul>
 
 <p><strong>Hesabınızı ve tüm verilerinizi uygulama içinden silebilirsiniz:</strong>
-Ayarlar → Hesabı sil. Silme işlemi konum, çocuk kayıtları, kullanım raporları,
-masallar ve mesajlar dahil tüm verileri kapsar.
+Ayarlar → Hesabı sil. Silme işlemi konum ve konum geçmişi, çocuk kayıtları,
+kullanım raporları, masallar ve mesajlar dahil tüm verileri kapsar.
 <a href="../hesap-silme/">Hesap ve veri silme</a> sayfasında ayrıntılar var.</p>
 
 <p>Talepleriniz için aşağıdaki adresten bize ulaşabilirsiniz.</p>
@@ -233,7 +244,7 @@ bilgilendirme yapılır.</p>
 <hr style="border:none;border-top:1px solid var(--cizgi);margin:3rem 0 2rem">
 
 <h1 id="en">Bizzy — Privacy Policy</h1>
-<p class="ust">Last updated: 18 October 2026 · App: Bizzy</p>
+<p class="ust">Last updated: 19 October 2026 · App: Bizzy</p>
 
 <p>Bizzy is a parental control application that lets parents monitor their
 child's device usage and location. This policy explains what data the app
@@ -247,7 +258,7 @@ to the parent's own account.</p>
 
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
-<tr><td>Location (approximate and precise)</td><td>Showing the parent the child's location and whether they are in a safe zone; showing the last seen place when the phone is no longer with the child. This is the app's core function.</td><td>Only the latest location is kept; no location history. Until account deletion.</td></tr>
+<tr><td>Location (approximate and precise)</td><td>Showing the parent the child's location and whether they are in a safe zone; showing the last seen place when the phone is no longer with the child; telling the parent, when asked, where the child went on a given day (location history). This is the app's core function.</td><td>The latest location until account deletion. Location history (points taken about every 100 metres or every 10 minutes) is deleted automatically after 30 days, and immediately when the child profile or the account is deleted.</td></tr>
 <tr><td>Email address and name</td><td>Account creation and authentication</td><td>Until account deletion</td></tr>
 <tr><td>Child details: name, date of birth, optional photo, safe zones, daily screen time limit, bedtime and meal times, the parent's choices for apps not right for the child's age</td><td>Child profile, reports and alerts. Entered by the parent.</td><td>Until the child or the account is deleted</td></tr>
 <tr><td>Apps used and usage duration</td><td>Screen-time reports and daily limit notifications</td><td>13 months (immediately if the account is deleted)</td></tr>
@@ -267,6 +278,13 @@ stay current even when the screen is off and the app is not open. A
 cannot be hidden, so anyone using the device can see that tracking is active.
 Maps are loaded from OpenStreetMap tile servers, which receive the device's IP
 address but never the child's location.</p>
+
+<p><strong>Location history:</strong> Bizzy keeps thinned-out points from the
+child's phone location (about every 100 metres or every 10 minutes). They are
+tied only to the parent's account and are used when the parent asks "Ask Bizzy"
+where the child went on a given day. They are deleted automatically after 30
+days, and immediately when the child profile or the account is deleted. When paid
+plans are in use, location history is part of Bizzy Location and Bizzy Family.</p>
 
 <h2>Apps not right for the child's age and the web filter</h2>
 
@@ -304,8 +322,9 @@ name lookups (DNS)</strong>:</p>
 
 <p>Stories and "Ask Bizzy" answers are generated with Google Cloud's AI service
 (Gemini). To answer a question, relevant details from your account, such as the
-child's name, age, current safe zone or screen time, may be sent to this
-service; street addresses are not sent. Google does not use this data to train
+child's name, age, current safe zone, screen time or a summary of that day's
+location history (safe zone names, times and distances), may be sent to this
+service; street addresses and coordinates are not sent. Google does not use this data to train
 its AI models.</p>
 
 <h2>Data sharing</h2>
@@ -336,8 +355,8 @@ also be used on the parent's own phone.</p>
 
 <p>You may request access to, correction of, or deletion of your personal data.
 <strong>You can delete your account and all associated data from within the
-app:</strong> Settings → Delete account. This includes location, child records,
-usage reports, stories and messages. See <a href="../hesap-silme/#en">account
+app:</strong> Settings → Delete account. This includes location and location
+history, child records, usage reports, stories and messages. See <a href="../hesap-silme/#en">account
 and data deletion</a> for details.</p>
 
 <h2>Contact</h2>
